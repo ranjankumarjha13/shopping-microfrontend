@@ -1,0 +1,31 @@
+                    Browser
+                       |
+                       v
+              Ecommerce Host
+              localhost:4200
+                       |
+                       | /shopping
+                       v
+             Angular Router
+                       |
+                       v
+              loadRemoteModule()
+                       |
+                       | "shopping-mfe"
+                       v
+              federation.manifest
+                       |
+                       v
+        http://localhost:4201/remoteEntry.json
+                       |
+                       v
+               Shopping MFE
+               localhost:4201
+                       |
+                       v
+             ProductsComponent
+                       |
+                       v
+              Render in Host
+			  
+			  

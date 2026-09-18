@@ -1,0 +1,24 @@
+                    ┌──────────────────────┐
+                    │   ECOMMERCE HOST     │
+                    │   localhost:4200     │
+                    └──────────┬───────────┘
+                               │
+             ┌─────────────────┼──────────────────┐
+             │                 │                  │
+             ↓                 ↓                  ↓
+      ┌─────────────┐   ┌─────────────┐   ┌─────────────┐
+      │ Shopping    │   │ Checkout    │   │ Orders      │
+      │ MFE         │   │ MFE         │   │ MFE         │
+      │ :4201       │   │ :4202       │   │ :4203       │
+      └─────────────┘   └─────────────┘   └─────────────┘
+
+
+ecommerce-host
+shopping-mfe
+checkout-mfe
+orders-mfe
+
+/                       → Host
+/shopping               → Shopping MFE
+/checkout               → Checkout MFE
+/orders                 → Orders MFE
