@@ -1,3 +1,4 @@
 {
-  "shopping-mfe": "http://localhost:4201/remoteEntry.json"
+  "shopping-mfe": "http://localhost:4201/remoteEntry.json",
+  "cart-microfrontend": "http://localhost:4202/remoteEntry.json"
 }
