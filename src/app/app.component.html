@@ -1,22 +1,93 @@
+<div class="app-container">
 
-<h1>My E-Commerce Application</h1>
+  <!-- Header -->
+  <header class="header">
 
-<nav>
+    <div class="logo">
+      <span class="logo-icon">🛍️</span>
+      <div>
+        <h2>ShopEase</h2>
+        <span class="tagline">Everything you need</span>
+      </div>
+    </div>
 
-  <a routerLink="/shopping">
-    Shopping
-  </a>
+    <nav class="nav-menu">
 
-  |
+      <a routerLink="/shopping" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        🛒 Shopping
+      </a>
 
-  <a routerLink="/cart">
-    Cart
-  </a>
+      <a routerLink="/cart" routerLinkActive="active">
+        🛍️ Cart
+        <span class="cart-badge">2</span>
+      </a>
 
-</nav>
+    </nav>
 
-<hr>
+    <div class="user-section">
+      <span class="user-icon">👤</span>
+      <span>Welcome</span>
+    </div>
 
-<router-outlet></router-outlet>
+  </header>
 
 
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <span class="offer-label">
+        SPECIAL OFFER
+      </span>
+
+      <h1>
+        Discover Products<br>
+        You'll <span>Love</span>
+      </h1>
+
+      <p>
+        Shop quality products at amazing prices.
+        Fast delivery and secure checkout.
+      </p>
+
+      <a routerLink="/shopping" class="shop-now">
+        Shop Now →
+      </a>
+
+    </div>
+
+    <div class="hero-image">
+      🛒
+    </div>
+
+  </section>
+
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <router-outlet></router-outlet>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div>
+      <strong>ShopEase</strong>
+      <span> © 2026 All Rights Reserved</span>
+    </div>
+
+    <div class="footer-links">
+      <span>Secure Payment</span>
+      <span> | </span>
+      <span>Fast Delivery</span>
+      <span> | </span>
+      <span>24/7 Support</span>
+    </div>
+
+  </footer>
+
+</div>
