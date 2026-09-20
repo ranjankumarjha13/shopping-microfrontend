@@ -35,8 +35,8 @@
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "ecommerce-host:build"
+          "options": {
+            "buildTarget": "ecommerce-host:build"
 					}
 				},
 				"test": {
@@ -107,11 +107,11 @@
 				"serve-original": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
-						"production": {
-							"browserTarget": "ecommerce-host:build:production"
+            "production": {
+              "buildTarget": "ecommerce-host:build:production"
 						},
-						"development": {
-							"browserTarget": "ecommerce-host:build:development"
+            "development": {
+              "buildTarget": "ecommerce-host:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
