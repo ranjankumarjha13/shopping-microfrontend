@@ -1,0 +1,25 @@
+<div class="unavailable-container">
+
+  <div class="unavailable-card">
+
+    <div class="icon">
+      ⚠️
+    </div>
+
+    <h2>{{ serviceName }} Temporarily Unavailable</h2>
+
+    <p>
+      We're unable to connect to the {{ serviceName }} application right now.
+    </p>
+
+    <p class="sub-message">
+      Please try again after some time.
+    </p>
+
+    <button (click)="reload()">
+      🔄 Try Again
+    </button>
+
+  </div>
+
+</div>
