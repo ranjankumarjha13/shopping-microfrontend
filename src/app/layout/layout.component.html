@@ -1,0 +1,80 @@
+<div class="app-shell">
+
+  <!-- Header -->
+  <header class="top-header">
+
+    <div class="brand">
+      <div class="brand-icon">🛒</div>
+
+      <div>
+        <h1>ShopEase</h1>
+        <span>Your Online Store</span>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+
+      <a
+        routerLink="/shopping"
+        routerLinkActive="active"
+        class="nav-link"
+      >
+        <span class="nav-icon">🛍️</span>
+        <span>Shopping</span>
+      </a>
+
+      <a
+        routerLink="/cart"
+        routerLinkActive="active"
+        class="nav-link cart-link"
+      >
+        <span class="nav-icon">🛒</span>
+        <span>Cart</span>
+        <span class="cart-badge">2</span>
+      </a>
+
+    </nav>
+
+  </header>
+
+  <!-- Hero / Welcome -->
+  <section class="welcome-section">
+
+    <div>
+      <h2>Welcome to ShopEase</h2>
+
+      <p>
+        Discover amazing products and enjoy a seamless
+        shopping experience.
+      </p>
+    </div>
+
+    <a
+      routerLink="/shopping"
+      class="shop-now-btn"
+    >
+      Start Shopping →
+    </a>
+
+  </section>
+
+  <!-- Microfrontend Content -->
+  <main class="content-area">
+
+    <router-outlet></router-outlet>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <span>© 2026 ShopEase</span>
+
+    <span>
+      Angular Microfrontend Application
+    </span>
+
+  </footer>
+
+</div>
